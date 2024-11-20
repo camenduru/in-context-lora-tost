@@ -1,0 +1,20 @@
+{
+    "input_image_check": "https://files.catbox.moe/z6mdko.png",
+    "positive_prompt": "This pair of images shows a pattern as [IMAGE1] Em1ru holding a packaging bag [IMAGE2]; the pattern on the packaging bag in [IMAGE2] must refer to [IMAGE1]; [IMAGE1] Em1ru holding a packaging bag; the packaging bag in [IMAGE2] is printed with [IMAGE1]; [IMAGE2] Em1ru holds a packaging bag with the [IMAGE1] pattern printed on it.",
+    "seed": 0,
+    "steps": 40,
+    "guidance": 3.5,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "max_shift": 1.15,
+    "base_shift": 0.50,
+    "patch_mode": "auto",
+    "output_length": 1536,
+    "patch_color": "#FF0000",
+    "custom_lora1_url": "https://files.catbox.moe/4zgu8u.safetensors",
+    "custom_lora1_strength_model": 1.0,
+    "custom_lora1_strength_clip": 1.0,
+    "custom_lora2_url": "https://files.catbox.moe/e2hsa6.safetensors",
+    "custom_lora2_strength_model": 0.9,
+    "custom_lora2_strength_clip": 0.9
+}

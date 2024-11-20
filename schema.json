@@ -1,0 +1,537 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "In-Context LoRA for Diffusion Transformers",
+      "author": "Lianghua Huang, Wei Wang, Zhi-Fan Wu, Yupeng Shi, Huanzhang Dou, Chen Liang, Yutong Feng, Yu Liu, Jingren Zhou",
+      "page": "https://ali-vilab.github.io/In-Context-LoRA-Page/",
+      "paper": "https://arxiv.org/abs/2410.23775",
+      "code": "https://github.com/ali-vilab/In-Context-LoRA",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/in-context-lora.ipynb",
+      "tags": [
+        "Image to Image"
+      ],
+      "widget": "readme"
+    },
+    "upload1": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "input_image_check"
+    },
+    "input_image_check": {
+      "type": "string",
+      "description": "Pose Image URL",
+      "widget": "textarea"
+    },
+    "positive_prompt": {
+      "type": "string",
+      "description": "Positive Prompt",
+      "widget": "textarea"
+    },
+    "seed": {
+      "type": "integer",
+      "description": "Seed (if 0 random)"
+    },
+    "steps": {
+      "type": "integer",
+      "widget": "select",
+      "description": "Steps",
+      "oneOf": [
+        {
+          "description": "20",
+          "enum": [
+            20
+          ]
+        },
+        {
+          "description": "25",
+          "enum": [
+            25
+          ]
+        },
+        {
+          "description": "30",
+          "enum": [
+            30
+          ]
+        },
+        {
+          "description": "35",
+          "enum": [
+            35
+          ]
+        },
+        {
+          "description": "40",
+          "enum": [
+            40
+          ]
+        }
+      ],
+      "default": 35
+    },
+    "guidance": {
+      "type": "number",
+      "description": "Guidance"
+    },
+    "sampler_name": {
+      "type": "string",
+      "widget": "select",
+      "description": "Sampler Name",
+      "oneOf": [
+        {
+          "description": "euler",
+          "enum": [
+            "euler"
+          ]
+        },
+        {
+          "description": "heun",
+          "enum": [
+            "heun"
+          ]
+        },
+        {
+          "description": "heunpp2",
+          "enum": [
+            "heunpp2"
+          ]
+        },
+        {
+          "description": "dpm_2",
+          "enum": [
+            "dpm_2"
+          ]
+        },
+        {
+          "description": "lms",
+          "enum": [
+            "lms"
+          ]
+        },
+        {
+          "description": "dpmpp_2m",
+          "enum": [
+            "dpmpp_2m"
+          ]
+        },
+        {
+          "description": "ipndm",
+          "enum": [
+            "ipndm"
+          ]
+        },
+        {
+          "description": "deis",
+          "enum": [
+            "deis"
+          ]
+        },
+        {
+          "description": "ddim",
+          "enum": [
+            "ddim"
+          ]
+        },
+        {
+          "description": "uni_pc",
+          "enum": [
+            "uni_pc"
+          ]
+        },
+        {
+          "description": "uni_pc_bh2",
+          "enum": [
+            "uni_pc_bh2"
+          ]
+        }
+      ],
+      "default": "euler"
+    },
+    "scheduler": {
+      "type": "string",
+      "widget": "select",
+      "description": "Scheduler",
+      "oneOf": [
+        {
+          "description": "beta",
+          "enum": [
+            "beta"
+          ]
+        },
+        {
+          "description": "normal",
+          "enum": [
+            "normal"
+          ]
+        },
+        {
+          "description": "sgm_uniform",
+          "enum": [
+            "sgm_uniform"
+          ]
+        },
+        {
+          "description": "simple",
+          "enum": [
+            "simple"
+          ]
+        },
+        {
+          "description": "ddim_uniform",
+          "enum": [
+            "ddim_uniform"
+          ]
+        }
+      ],
+      "default": "simple"
+    },
+    "upload2": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "custom_lora1_url"
+    },
+    "custom_lora1_url": {
+      "type": "string",
+      "description": "Custom Lora 1 URL",
+      "widget": "textarea"
+    },
+    "custom_lora1_strength_model": {
+      "type": "number",
+      "widget": "select",
+      "description": "Lora 1 Strength Model",
+      "oneOf": [
+        {
+          "description": "0",
+          "enum": [
+            0
+          ]
+        },
+        {
+          "description": "0.1",
+          "enum": [
+            0.1
+          ]
+        },
+        {
+          "description": "0.2",
+          "enum": [
+            0.2
+          ]
+        },
+        {
+          "description": "0.3",
+          "enum": [
+            0.3
+          ]
+        },
+        {
+          "description": "0.4",
+          "enum": [
+            0.4
+          ]
+        },
+        {
+          "description": "0.5",
+          "enum": [
+            0.5
+          ]
+        },
+        {
+          "description": "0.6",
+          "enum": [
+            0.6
+          ]
+        },
+        {
+          "description": "0.7",
+          "enum": [
+            0.7
+          ]
+        },
+        {
+          "description": "0.8",
+          "enum": [
+            0.8
+          ]
+        },
+        {
+          "description": "0.9",
+          "enum": [
+            0.9
+          ]
+        },
+        {
+          "description": "1",
+          "enum": [
+            1
+          ]
+        }
+      ],
+      "default": 1
+    },
+    "custom_lora1_strength_clip": {
+      "type": "number",
+      "widget": "select",
+      "description": "Lora 1 Strength Clip",
+      "oneOf": [
+        {
+          "description": "0",
+          "enum": [
+            0
+          ]
+        },
+        {
+          "description": "0.1",
+          "enum": [
+            0.1
+          ]
+        },
+        {
+          "description": "0.2",
+          "enum": [
+            0.2
+          ]
+        },
+        {
+          "description": "0.3",
+          "enum": [
+            0.3
+          ]
+        },
+        {
+          "description": "0.4",
+          "enum": [
+            0.4
+          ]
+        },
+        {
+          "description": "0.5",
+          "enum": [
+            0.5
+          ]
+        },
+        {
+          "description": "0.6",
+          "enum": [
+            0.6
+          ]
+        },
+        {
+          "description": "0.7",
+          "enum": [
+            0.7
+          ]
+        },
+        {
+          "description": "0.8",
+          "enum": [
+            0.8
+          ]
+        },
+        {
+          "description": "0.9",
+          "enum": [
+            0.9
+          ]
+        },
+        {
+          "description": "1",
+          "enum": [
+            1
+          ]
+        }
+      ],
+      "default": 1
+    },
+    "upload3": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "custom_lora2_url"
+    },
+    "custom_lora2_url": {
+      "type": "string",
+      "description": "Custom Lora 2 URL",
+      "widget": "textarea"
+    },
+    "custom_lora2_strength_model": {
+      "type": "number",
+      "widget": "select",
+      "description": "Custom Lora 2 Strength Model",
+      "oneOf": [
+        {
+          "description": "0",
+          "enum": [
+            0
+          ]
+        },
+        {
+          "description": "0.1",
+          "enum": [
+            0.1
+          ]
+        },
+        {
+          "description": "0.2",
+          "enum": [
+            0.2
+          ]
+        },
+        {
+          "description": "0.3",
+          "enum": [
+            0.3
+          ]
+        },
+        {
+          "description": "0.4",
+          "enum": [
+            0.4
+          ]
+        },
+        {
+          "description": "0.5",
+          "enum": [
+            0.5
+          ]
+        },
+        {
+          "description": "0.6",
+          "enum": [
+            0.6
+          ]
+        },
+        {
+          "description": "0.7",
+          "enum": [
+            0.7
+          ]
+        },
+        {
+          "description": "0.8",
+          "enum": [
+            0.8
+          ]
+        },
+        {
+          "description": "0.9",
+          "enum": [
+            0.9
+          ]
+        },
+        {
+          "description": "1",
+          "enum": [
+            1
+          ]
+        }
+      ],
+      "default": 1
+    },
+    "custom_lora2_strength_clip": {
+      "type": "number",
+      "widget": "select",
+      "description": "Custom Lora 2 Strength Clip",
+      "oneOf": [
+        {
+          "description": "0",
+          "enum": [
+            0
+          ]
+        },
+        {
+          "description": "0.1",
+          "enum": [
+            0.1
+          ]
+        },
+        {
+          "description": "0.2",
+          "enum": [
+            0.2
+          ]
+        },
+        {
+          "description": "0.3",
+          "enum": [
+            0.3
+          ]
+        },
+        {
+          "description": "0.4",
+          "enum": [
+            0.4
+          ]
+        },
+        {
+          "description": "0.5",
+          "enum": [
+            0.5
+          ]
+        },
+        {
+          "description": "0.6",
+          "enum": [
+            0.6
+          ]
+        },
+        {
+          "description": "0.7",
+          "enum": [
+            0.7
+          ]
+        },
+        {
+          "description": "0.8",
+          "enum": [
+            0.8
+          ]
+        },
+        {
+          "description": "0.9",
+          "enum": [
+            0.9
+          ]
+        },
+        {
+          "description": "1",
+          "enum": [
+            1
+          ]
+        }
+      ],
+      "default": 1
+    },
+    "max_shift": {
+      "type": "number",
+      "description": "Max Shift"
+    },
+    "base_shift": {
+      "type": "number",
+      "description": "Base Shift"
+    },
+    "patch_mode": {
+      "type": "string",
+      "description": "Patch Mode"
+    },
+    "output_length": {
+      "type": "integer",
+      "description": "Output Length"
+    },
+    "patch_color": {
+      "type": "string",
+      "description": "Patch Color"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}
