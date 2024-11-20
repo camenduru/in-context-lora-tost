@@ -16,7 +16,7 @@ USER camenduru
 RUN pip install torch==2.5.0+cu124 torchvision==0.20.0+cu124 torchaudio==2.5.0+cu124 torchtext==0.18.0 torchdata==0.8.0 --extra-index-url https://download.pytorch.org/whl/cu124 && \
     pip install xformers==0.0.28.post2 https://github.com/camenduru/wheels/releases/download/torch-2.5.0-cu124/flash_attn-2.6.3-cp310-cp310-linux_x86_64.whl && \
     pip install opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod && \
-    pip install torchsde einops diffusers transformers accelerate peft timm kornia && \
+    pip install torchsde einops diffusers transformers accelerate peft timm kornia scikit-image && \
     git clone https://github.com/comfyanonymous/ComfyUI /content/ComfyUI && \
     git clone https://github.com/ltdrdata/ComfyUI-Manager /content/ComfyUI/custom_nodes/ComfyUI-Manager && \
     git clone https://github.com/lrzjason/Comfyui-In-Context-Lora-Utils /content/ComfyUI/custom_nodes/Comfyui-In-Context-Lora-Utils && \
