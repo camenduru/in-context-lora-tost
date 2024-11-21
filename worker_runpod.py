@@ -82,8 +82,8 @@ def generate(input):
     custom_lora1_unet, custom_lora1_clip = LoraLoader.load_lora(unet, clip, custom_lora1_file, custom_lora1_strength_model, custom_lora1_strength_clip)
     lora_unet, lora_clip = LoraLoader.load_lora(custom_lora1_unet, custom_lora1_clip, custom_lora2_file, custom_lora2_strength_model, custom_lora2_strength_clip)
     conditioning = CLIPTextEncodeFlux.encode(lora_clip, positive_prompt, positive_prompt, guidance)[0]
-    input_image = LoadImage.load_image(input_image)[0]
-    return_images, return_masks, min_x, min_y, target_width, target_height, width, height = AddMaskForICLora.add_mask(input_image, patch_mode, output_length, patch_color)
+    load_image = LoadImage.load_image(input_image)[0]
+    return_images, return_masks, min_x, min_y, target_width, target_height, width, height = AddMaskForICLora.add_mask(load_image, patch_mode, output_length, patch_color)
     final_model = ModelSamplingFlux.patch(lora_unet, max_shift, base_shift, width, height)[0]
     noise = RandomNoise.get_noise(seed)[0]
     guider = BasicGuider.get_guider(final_model, conditioning)[0]
