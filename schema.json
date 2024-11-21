@@ -528,12 +528,22 @@
       "type": "string",
       "description": "Patch Color"
     },
-    "example": {
+    "example1": {
       "type": "string",
       "image1": "https://fakeimg.pl/512x512/282828/eae0d0/?text=input#.png",
       "image2": "https://files.catbox.moe/z6mdko.png",
       "image3": "https://fakeimg.pl/512x512/282828/eae0d0/?text=output#.png",
       "image4": "https://files.catbox.moe/o3jhri.png",
+      "line1": "Prompt: This pair of images shows a pattern as [MODEL_IMAGE] a person holding a packaging bag [CLOTH_IMAGE]; the pattern on the packaging bag in [MODEL_IMAGE] must refer to [CLOTH_IMAGE]; [MODEL_IMAGE] a person holding a packaging bag; the packaging bag in [MODEL_IMAGE] is printed with [CLOTH_IMAGE]; [MODEL_IMAGE] a person holds a packaging bag with the [CLOTH_IMAGE] pattern printed on it.",
+      "widget": "example"
+    },
+    "example2": {
+      "type": "string",
+      "image1": "https://fakeimg.pl/512x512/282828/eae0d0/?text=input#.png",
+      "image2": "https://files.catbox.moe/z6mdko.png",
+      "image3": "https://fakeimg.pl/512x512/282828/eae0d0/?text=output#.png",
+      "image4": "https://files.catbox.moe/oq98x2.png",
+      "line1": "Prompt: [Try On], The image pair highlights a transformation from a clothing sample photo to the effect of actually wearing it. ; [CLOTH_IMAGE]; [MODEL_IMAGE];",
       "widget": "example"
     }
   },

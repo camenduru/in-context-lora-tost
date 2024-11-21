@@ -1,6 +1,6 @@
 {
     "input_image_check": "https://files.catbox.moe/z6mdko.png",
-    "positive_prompt": "This pair of images shows a pattern as [IMAGE1] a person holding a packaging bag [IMAGE2]; the pattern on the packaging bag in [IMAGE2] must refer to [IMAGE1]; [IMAGE1] a person holding a packaging bag; the packaging bag in [IMAGE2] is printed with [IMAGE1]; [IMAGE2] a person holds a packaging bag with the [IMAGE1] pattern printed on it.",
+    "positive_prompt": "[Try On], The image pair highlights a transformation from a clothing sample photo to the effect of actually wearing it. ; [CLOTH_IMAGE]; [MODEL_IMAGE];",
     "seed": 0,
     "steps": 40,
     "guidance": 3.5,
