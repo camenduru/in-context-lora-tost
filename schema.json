@@ -9,6 +9,7 @@
       "page": "https://ali-vilab.github.io/In-Context-LoRA-Page/",
       "paper": "https://arxiv.org/abs/2410.23775",
       "code": "https://github.com/ali-vilab/In-Context-LoRA",
+      "jupyter": "https://github.com/camenduru/in-context-lora-tost",
       "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/in-context-lora.ipynb",
       "tags": [
         "Image to Image"
