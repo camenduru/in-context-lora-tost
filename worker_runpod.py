@@ -31,7 +31,7 @@ VAEDecode = NODE_CLASS_MAPPINGS["VAEDecode"]()
 ImageCrop = NODE_CLASS_MAPPINGS["ImageCrop+"]()
 
 with torch.inference_mode():
-    unet = UNETLoader.load_unet("flux1-dev-fp8.safetensors", "fp8_e4m3fn")[0]
+    unet = UNETLoader.load_unet("flux1-dev.sft", "default")[0]
     clip = DualCLIPLoader.load_clip("t5xxl_fp16.safetensors", "clip_l.safetensors", "flux")[0]
     vae = VAELoader.load_vae("ae.sft")[0]
 

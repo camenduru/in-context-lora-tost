@@ -22,7 +22,8 @@ https://ali-vilab.github.io/In-Context-LoRA-Page/
 https://civitai.com/models/950111?modelVersionId=1063742
 
 ### 🖼 Output
-![Screenshot 2024-11-21 020849](https://github.com/user-attachments/assets/6b1b2b5e-a6e6-4cf5-ac1c-73c30f7a1811)
+
+https://github.com/user-attachments/assets/11a77e78-6f0d-4c57-97af-b0677ec14742
 
 ### 🏢 Sponsor
 [https://runpod.io](https://runpod.io?ref=iqi9iy8y)
