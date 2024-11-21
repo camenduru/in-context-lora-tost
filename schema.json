@@ -527,6 +527,14 @@
     "patch_color": {
       "type": "string",
       "description": "Patch Color"
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://fakeimg.pl/512x512/282828/eae0d0/?text=input#.png",
+      "image2": "https://files.catbox.moe/z6mdko.png",
+      "image3": "https://fakeimg.pl/512x512/282828/eae0d0/?text=output#.png",
+      "image4": "https://files.catbox.moe/o3jhri.png",
+      "widget": "example"
     }
   },
   "buttons": [
